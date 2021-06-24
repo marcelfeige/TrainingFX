@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.MenuController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-2.0" prefHeight="399.0" prefWidth="455.0" spacing="15.0">
+         <children>
+            <Label fx:id="label" text="Optienen Trainingseinheiten">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Line endX="180.0" />
+            <VBox alignment="CENTER" prefHeight="205.0" prefWidth="415.0" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="btnSpeichern" minHeight="-Infinity" mnemonicParsing="false" onAction="#windowSpeichern" prefHeight="25.0" prefWidth="100.0" text="speichern">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </opaqueInsets></Button>
+                        <Button fx:id="btnAnzeigen" mnemonicParsing="false" onAction="#windowAnzeigen" prefHeight="25.0" prefWidth="100.0" text="anzeigen">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="btnLoeschen" mnemonicParsing="false" onAction="#windowLoeschen" prefHeight="25.0" prefWidth="100.0" text="löschen">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="btnAendern" mnemonicParsing="false" onAction="#windowAendern" prefHeight="25.0" prefWidth="100.0" text="ändern">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </HBox>
+                  <Button fx:id="btnCloseMenu" mnemonicParsing="false" onAction="#closeMenu" prefHeight="25.0" prefWidth="100.0" text="Schließen">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
